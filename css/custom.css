@@ -1,0 +1,208 @@
+/* Vos customisations des classes de Bootstrap */
+#block_page{
+	width: 1290px;
+	margin:auto;
+}
+/* MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU //
+ MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU //*/
+nav {
+	background-color: #272727;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav ul{
+	list-style-type: none;
+	margin-top: 10px;
+}
+nav ul li {
+	display: inline-block;
+	font-size: 1.5em;
+	margin-left: 20px;
+}
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE //
+ BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE // BANNIERE //*/
+
+#home{
+	background-image: url("../images/hero-image.jpg");
+	width: 1290px;
+	margin:auto;
+	padding: 20px;
+	text-align: center;
+	color: #FFFFFF;
+}
+#jumbotron{
+	text-align: center;
+	font-size: 3em;
+}
+#texte_baniere{
+	font-size: 1em;
+	margin-bottom: 50px;
+}
+#title_button{
+	font-size: 2.5em;
+	border-radius: 7px;
+	background-color: #E43D4A;
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+}
+#CODE{
+	margin-top: 50px;
+}
+/* CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS //
+ CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS // CORPS //*/
+#corps{
+	width: 1290px;
+	margin:auto;
+}
+ #who{
+ 	text-align:center;
+ 	margin-top: 50px;
+ 	color: #E43D4A;
+ 	text-transform: uppercase;
+ }
+ #text_under{
+ 	color: black;
+ 	font-size: 1em;
+ 	text-transform: none;
+ }
+ #red{
+ 	color: #E43D4A;
+ }
+
+ #get-involved{
+ 	background-color: #E9E9E9;
+ 	text-align:center;
+ 	margin-top: 50px;
+ 	padding-bottom: 30px;
+ 	padding-top: 30px;
+ 	font-size: 1.2em;
+ 	color: #E43D4A;
+}
+#gras{
+	border-bottom: 2px solid #E43D4A;
+}
+#trois_cases{
+
+ 	display: flex;
+ 	justify-content: space-around;
+}
+#student, #educator, #sponsors{
+	width: 300px;
+	color: black;
+	margin-top: 20px;
+}
+h3{
+ 	color: #E43D4A;
+}
+.bob{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.bouton_bas{
+ 	color: #E43D4A;
+}
+#video{
+	position: relative;
+	background-color: #C0C0C0;
+	width: 600px;
+	padding: 20px;
+	display: none;
+}
+#fermer{
+	display: block;
+	color: black;
+	text-align: center;
+}
+
+/* FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER //
+ FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER // FOOTER //*/
+
+ footer{
+ 	background-color: #E43D4A;
+ 	height: 200px;
+ 	padding-left: 100px;
+ 	padding-right: 100px;
+ 	padding-top: 130px;
+ }
+#back-to-top{
+	width: 40px;
+	color: #E43D4A;
+	text-transform: uppercase;
+	border-radius: 50%;
+	background-color: maroon;
+	text-align: center;
+	font-weight: bold;
+	padding: 12px 0px 12px 0px;
+	float: right;
+}
+#toTop{
+	color: #E43D4A;
+}
+/* Responsive Styling */
+/* MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA //
+ MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA // MEDIA //*/
+
+@media (max-width: 1199px) {
+	#block_page{
+		width: 1000px;
+		overflow: hidden;
+	}
+	#corps{
+		width: auto;
+	}
+	#home{
+		width: auto;
+	}	
+
+}
+
+@media (max-width: 991px) {
+	#block_page{
+		width: 850px;
+		overflow: hidden;
+	}
+	#trois_cases{
+		display: block;
+		text-align: center;
+	}
+	#student, #educator, #sponsors{
+	width: auto;
+	color: black;
+	margin-top: 50px;
+}
+}
+
+@media (max-width: 767px) {
+	#block_page{
+		width: 650px;
+		overflow: hidden;
+	}
+	#trois_cases{
+		display: block;
+		text-align: center;
+	}
+	#student, #educator, #sponsors{
+		width: auto;
+		color: black;
+		margin-top: 50px;
+	}
+	#video{
+		top: 0px;
+		left: 20px;
+		padding: 20px;
+	}
+}

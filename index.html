@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Million Lines</title>
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body>
+  <div id=block_page>
+    <nav>
+      <img src="images/top-logo.png" alt="one million" id="oneMillion"/>
+      <ul id=menu>
+        <li id="m1"><a href="#">Who we are</a></li>
+        <li id="m2"><a href="#">Get involved</a></li>
+      </ul> 
+    </nav>
+    <div id="corps">
+    <div id="home">
+      <p id="jumbotron">Our goal is to inspire <br/> Tallahassee to write 1,000,000 <br/> lines of codes_</p>
+      <p id="texte_baniere">
+        All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by CODE.org. Millions of lines of code <br/> are being written. In the capital of Florid, Tallahassee, the community is taking the challenge and our goal is to write<br/> 1, 000 ,000 lines of code_
+      </p>
+      <center>
+      <div>
+        <div id="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qt3QbO3Ja_4" frameborder="0" allowfullscreen></iframe>  
+           <a href="#" title="fermer" id ="fermer">FERMER</a>  
+        </div><!-- /#get-involved -->
+      </div>
+      </center>
+      <p><a href="#" id="title_button">Learn More >></a></p>
+      <img src="images/code.png" alt="CODE" id="CODE" />
+    </div>
+
+    <div id="who">
+      <img src="images/academy-brand-med.png" alt="logo" />
+      <h2 id="text_logo"><strong>Who we are</strong></h2>
+      <p id="text_under">
+        We are <span id=red>MASSIVE Academy</span>. We aim to improve education through both method-effective project- based- learning and material - by teaching skills that are applicable to improve your life today.
+      </p>
+    </div><!-- /#who -->
+
+    <div id="get-involved">
+      <h2 id="Get_Involved"><span id="gras">GET-INVOLVED</span"></h2>
+      <div id= "trois_cases">
+        <div id="student">
+         <img src="images/girlminion.svg" alt="logo_2" class="bob"/>
+         <h3 id="STUDENT">STUDENTS</h3>        
+        <p>
+            Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll   let you know how to get involved        
+        </p>
+        <button class="bouton_bas">Start learning >></button>
+        </div>
+       <div id="educator">
+         <img src="images/websize.jpeg" alt="logo_3" class="bob"/>
+         <h3 id="START_LEARNING">START LEARNING</h3>
+         <p>
+           Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen.
+         </p>
+          <button class="bouton_bas">Join the initiative >></button>
+       </div>
+        <div id="sponsors">
+         <img src="images/tumblr_nwj0lxnMAd1s8njeuo1_1280.png.jpeg" alt="bob" class="bob" />
+          <h3 id="SPONSOR">SPONSOR</h3>
+          <p>
+           We love all the support we get to help host more events, and empower more lives with the knowledge of coding. Click to get involved
+          </p>
+         <button class="bouton_bas">Give Support >></button>
+       </div>
+      </div> 
+      </div>
+    <footer>
+      <img src="images/one-million-bottom-brand.png" alt="brand" />
+      <div id="back-to-top">
+      <a href="#jumbotron" id="jumbo">h</a>
+    </div>
+    </footer>
+
+   
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script>
+      var bouton = document.getElementById("title_button");
+      var video = document.getElementById("video");
+      
+      bouton.addEventListener("click", function(){
+      
+        video.style.display = "block";
+      }, false);
+
+      var fermer =  document.getElementById("fermer");
+
+      fermer.addEventListener("click", function(){
+        video.style.display = "none";  
+      }, false);
+      
+    </script>
+  </div>  
+  </body>
+</html>
