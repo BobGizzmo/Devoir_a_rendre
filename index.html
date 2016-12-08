@@ -21,68 +21,73 @@
   </head>
 
   <body>
-
+  <div id=block_page>
     <nav>
-      <img src="top-logo.png" alt="one million" />
+      <img src="images/top-logo.png" alt="one million" id="oneMillion"/>
       <ul id=menu>
-        <li>Who we are</li>
-        <li>Get involved</li>
+        <li id="m1"><a href="#">Who we are</a></li>
+        <li id="m2"><a href="#">Get involved</a></li>
       </ul> 
     </nav>
-
+    <div id="corps">
     <div id="home">
-      <img src="images/hero-image.jpg" alt="banniere" />
-      <p id="jumbotron">Our goal is to inspire Tallahassee to write 1, 000, 000 lines of codes</p>
+      <p id="jumbotron">Our goal is to inspire <br/> Tallahassee to write 1,000,000 <br/> lines of codes_</p>
       <p id="texte_baniere">
-        All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by CODE.org. Millions of lines of code are being written. In the capital of Florid, Tallahassee, the community is taking the challenge and our goal is to write 1, 000 ,000 lines of code_
+        All over the country people are taking the <strong>HOUR OF CODE</strong> challenge issued by CODE.org. Millions of lines of code <br/> are being written. In the capital of Florid, Tallahassee, the community is taking the challenge and our goal is to write<br/> 1, 000 ,000 lines of code_
       </p>
-      <button>Learn More >></button>
-      <img src="images/code.png" alt="CODE" />
+      <p><a href="#" id="title_button">Learn More >></a></p>
+      <img src="images/code.png" alt="CODE" id="CODE" />
     </div>
 
     <div id="who">
       <img src="images/academy-brand-med.png" alt="logo" />
-      <h2 id="text_logo">Who we are</h2>
+      <h2 id="text_logo"><strong>Who we are</strong></h2>
       <p id="text_under">
-        We are <span id=red>MASSIVE Academy</span>. We aim to improve education through both method-effective project-learning and material - by teaching skills that are applicable to improve your life today.
+        We are <span id=red>MASSIVE Academy</span>. We aim to improve education through both method-effective project- based- learning and material - by teaching skills that are applicable to improve your life today.
       </p>
     </div><!-- /#who -->
 
     <div id="get-involved">
-      <h3 id="Get_Involved">GET-INVOLVED</h3>
-      <div id="student">
-        <img src="images/girlminion.svg" alt="logo_2" id="girlminion"/>
-        <h3 id="STUDENT">STUDENT</h3>        
+      <h2 id="Get_Involved"><span id="gras">GET-INVOLVED</span"></h2>
+      <div id= "trois_cases">
+        <div id="student">
+         <img src="images/girlminion.svg" alt="logo_2" class="bob"/>
+         <h3 id="STUDENT">STUDENTS</h3>        
         <p>
-          Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll let you know how to get involved        </p>
-        <button>Start learning >></button>
-      </div>
-      <div id="educator">
-        <img src="images/websize.jpeg" alt="logo_3" id="robert"/>
-        <h3 id="START_LEARNING">START LEARNING</h3>
-        <p>
-          Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen.
+            Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll   let you know how to get involved        
         </p>
-        <button>Join the initiative >></button>
+        <button class="bouton_bas">Start learning >></button>
+        </div>
+       <div id="educator">
+         <img src="images/websize.jpeg" alt="logo_3" class="bob"/>
+         <h3 id="START_LEARNING">START LEARNING</h3>
+         <p>
+           Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen.
+         </p>
+          <button class="bouton_bas">Join the initiative >></button>
+       </div>
+        <div id="sponsors">
+         <img src="images/tumblr_nwj0lxnMAd1s8njeuo1_1280.png.jpeg" alt="bob" class="bob" />
+          <h3 id="SPONSOR">SPONSOR</h3>
+          <p>
+           We love all the support we get to help host more events, and empower more lives with the knowledge of coding. Click to get involved
+          </p>
+         <button class="bouton_bas">Give Support >></button>
+       </div>
+      </div> 
       </div>
-      <div id="sponsors">
-        <img src="images/tumblr_nwj0lxnMAd1s8njeuo1_1280.png.jpeg" alt="bob" />
-        <h3 id="SPONSOR">SPONSOR</h3>
-        <p>
-          We love all the support we get to help host more events, and empower more lives with the knowledge of coding. Click to get involved
-        </p>
-        <button>Give Support >></button>
-      </div>     
+      <div id="video">
+        <video src="https://youtu.be/qt3QbO3Ja_4" >Votre Navigateur n' affiche pas la video</video>     
     </div><!-- /#get-involved -->
 
     <footer>
       <img src="images/one-million-bottom-brand.png" alt="brand" />
+      <div id="back-to-top">
+      <a href="#jumbotron" id="jumbo">h</a>
+    </div>
     </footer>
 
-    <div id="back-to-top">
-      <!-- Votre code ici -->
-    </div><!-- /#back-to-top -->
-
+   
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -90,5 +95,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
+    <!--<script>
+      var page = getComputedStyle(document.getElementById("block_page"), null);
+    
+      if(parseInt(page.width) < 767){
+        var m1 = document.getElementById("m1").style.display = "none";
+        var m2 = document.getElementById("m2").style.display = "none";
+        var menu1 = document.getElementById("menu");
+        var img = document.createElement("img");
+        img.src = "images/Capture.png";
+        img.id = "list_menu";
+        img.alt ="list_menu";
+        img.addEventListener("click", function(){
+          var divMenu = document.createElement("div");
+          divMenu.id = "divMenu";
+          divMenu.style.position = "absolute";
+          
+          var m = [];
+          for(var i = 1; i <= 2; i++){
+            m[i] = document.createElement("p");
+            m[i].style.backgroundColor = "#C0C0C0";
+            m[i].style.marginBottom = "0px";
+            m[i].style.borderBottom = "1px solid black";
+            m[i].style.padding = "0px 20px 0px 20px"; 
+            m[i].style.padding = "0px 20px 0px 20px";
+           
+            divMenu.appendChild(m[i]);
+          }
+
+          
+          m[1].appendChild(document.createTextNode("Who we are"));
+          m[2].appendChild(document.createTextNode("Get Involved"));
+         
+          menu.appendChild(divMenu);
+        }, false);
+        menu.appendChild(img);
+
+      }
+    
+    </script>-->
+  </div>  
   </body>
 </html>
