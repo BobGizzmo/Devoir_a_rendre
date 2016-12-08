@@ -77,7 +77,8 @@
       </div> 
       </div>
       <div id="video">
-        <video src="https://youtu.be/qt3QbO3Ja_4" >Votre Navigateur n' affiche pas la video</video>     
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qt3QbO3Ja_4" frameborder="0" allowfullscreen></iframe>  
+        <a href="#" title="fermer" id ="fermer">FERMER</a>  
     </div><!-- /#get-involved -->
 
     <footer>
@@ -95,45 +96,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
-    <!--<script>
-      var page = getComputedStyle(document.getElementById("block_page"), null);
-    
-      if(parseInt(page.width) < 767){
-        var m1 = document.getElementById("m1").style.display = "none";
-        var m2 = document.getElementById("m2").style.display = "none";
-        var menu1 = document.getElementById("menu");
-        var img = document.createElement("img");
-        img.src = "images/Capture.png";
-        img.id = "list_menu";
-        img.alt ="list_menu";
-        img.addEventListener("click", function(){
-          var divMenu = document.createElement("div");
-          divMenu.id = "divMenu";
-          divMenu.style.position = "absolute";
-          
-          var m = [];
-          for(var i = 1; i <= 2; i++){
-            m[i] = document.createElement("p");
-            m[i].style.backgroundColor = "#C0C0C0";
-            m[i].style.marginBottom = "0px";
-            m[i].style.borderBottom = "1px solid black";
-            m[i].style.padding = "0px 20px 0px 20px"; 
-            m[i].style.padding = "0px 20px 0px 20px";
-           
-            divMenu.appendChild(m[i]);
-          }
+    <script>
+      var bouton = document.getElementById("title_button");
+      var video = document.getElementById("video");
+      
+      bouton.addEventListener("click", function(){
+      
+        video.style.display = "block";
+      }, false);
 
-          
-          m[1].appendChild(document.createTextNode("Who we are"));
-          m[2].appendChild(document.createTextNode("Get Involved"));
-         
-          menu.appendChild(divMenu);
-        }, false);
-        menu.appendChild(img);
+      var fermer =  document.getElementById("fermer");
 
-      }
-    
-    </script>-->
+      fermer.addEventListener("click", function(){
+        video.style.display = "none";  
+      }, false);
+      
+    </script>
   </div>  
   </body>
 </html>
