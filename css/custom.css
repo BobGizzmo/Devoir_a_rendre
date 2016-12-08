@@ -1,6 +1,6 @@
 /* Vos customisations des classes de Bootstrap */
 #block_page{
-	width: auto;
+	width: 1290px;
 	margin:auto;
 }
 /* MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU // MENU //
@@ -197,8 +197,13 @@ h3{
 		text-align: center;
 	}
 	#student, #educator, #sponsors{
-	width: auto;
-	color: black;
-	margin-top: 50px;
-}
+		width: auto;
+		color: black;
+		margin-top: 50px;
+	}
+	#video{
+		top: 0px;
+		left: 20px;
+		padding: 20px;
+	}
 }
