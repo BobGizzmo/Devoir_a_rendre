@@ -1,0 +1,13 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+#cadre {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border: 2px outset black;
+}
+#calc{
+  margin-top: 130px;
+}
